@@ -52,3 +52,25 @@ Las principales tecnologías empleadas en este proyecto son:
 * **Maven** (gestión de dependencias y estructura multimódulo)
 * **IntelliJ IDEA** (entorno de desarrollo)
 * **Git y GitHub** (control de versiones)
+
+---
+
+## Enfoque del proyecto
+
+El sistema integrará distintas fuentes de información económica con el objetivo de analizar la relación entre noticias recientes y fluctuaciones en los mercados financieros.
+
+Se combinarán:
+
+- Noticias globales mediante NewsAPI
+- Precios y estadísticas de criptomonedas mediante CoinGecko API
+- Datos financieros adicionales (acciones y tasas de cambio) mediante Alpha Vantage
+
+---
+
+## Objetivo funcional
+
+Permitir:
+
+- Relacionar variaciones en precios de criptomonedas con noticias económicas recientes.
+- Generar visualizaciones o alertas basadas en eventos relevantes.
+- Construir un pequeño sistema de seguimiento financiero combinado.
