@@ -13,7 +13,7 @@
 
     <modules>
         <module>source-api</module>
-        <module>source-scraper</module>
+        <module>source-api2</module>
     </modules>
 
     <properties>

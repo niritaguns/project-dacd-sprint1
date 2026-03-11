@@ -7,7 +7,6 @@ Este proyecto forma parte de la asignatura **Desarrollo de Aplicaciones para Cie
 El objetivo de este primer sprint es comenzar la construcción de una aplicación Java organizada en múltiples módulos, capaz de:
 
 * Obtener datos desde una **API pública**
-* Obtener datos mediante **scraping web**
 * Procesar y organizar la información obtenida
 
 ---

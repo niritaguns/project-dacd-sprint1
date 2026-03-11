@@ -1,4 +1,4 @@
 package org.ulpgc.dacd.scraper;
 
-public class ScraperClient {
+public class Api2Service {
 }
