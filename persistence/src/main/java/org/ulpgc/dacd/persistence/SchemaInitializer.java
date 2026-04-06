@@ -1,26 +1,24 @@
 package org.ulpgc.dacd.persistence;
 
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.sql.Statement;
 
 public class SchemaInitializer {
 
-    public static void createTables() throws SQLException {
+    public static void createTables() throws Exception {
 
-        try (Connection conn = DatabaseManager.connect();
+        try (Connection conn = DatabaseManager.getConnection();
              Statement stmt = conn.createStatement()) {
 
             stmt.execute("""
-                CREATE TABLE IF NOT EXISTS flight_states (
+                CREATE TABLE IF NOT EXISTS flights (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    flight_icao TEXT,
-                    airport TEXT,
-                    status TEXT,
+                    icao TEXT,
+                    callsign TEXT,
+                    country TEXT,
                     altitude REAL,
-                    last_update TEXT,
-                    captured_at TEXT
-                );
+                    last_update INTEGER
+                )
             """);
         }
     }
