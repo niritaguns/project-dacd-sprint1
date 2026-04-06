@@ -5,7 +5,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class Api2Client {
+public class FlightClient {
 
     private static final String URL = "https://opensky-network.org/api/states/all";
 

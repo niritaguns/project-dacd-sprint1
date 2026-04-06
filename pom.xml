@@ -12,7 +12,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>source-api</module>
+        <module>weather-api</module>
         <module>flight-api</module>
         <module>persistence</module>
     </modules>

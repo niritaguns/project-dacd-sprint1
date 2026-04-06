@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Api2Service service = new Api2Service();
+        FlightService service = new FlightService();
         service.execute();
         System.out.println("Sistema funcionando correctamente");
     }

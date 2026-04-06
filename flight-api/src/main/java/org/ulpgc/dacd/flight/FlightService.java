@@ -1,8 +1,8 @@
 package org.ulpgc.dacd.flight;
 
-public class Api2Service {
+public class FlightService {
 
-    private final Api2Client client = new Api2Client();
+    private final FlightClient client = new FlightClient();
 
     public void execute() {
 

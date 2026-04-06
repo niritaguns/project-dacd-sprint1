@@ -1,4 +1,4 @@
 package org.ulpgc.dacd.spaceweather;
 
-public class ApiClient {
+public class SpaceWeatherClient {
 }
