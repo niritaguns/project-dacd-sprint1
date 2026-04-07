@@ -25,7 +25,7 @@ public class Main {
                 service::execute,
                 0,
                 1,
-                TimeUnit.MINUTES
+                TimeUnit.HOURS
         );
     }
 }
