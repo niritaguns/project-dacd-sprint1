@@ -6,6 +6,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+import org.ulpgc.dacd.analysis.FlightAnalysis;
+import org.ulpgc.dacd.analysis.SpaceWeatherAnalysis;
+
 public class Main {
 
     public static void main(String[] args) {

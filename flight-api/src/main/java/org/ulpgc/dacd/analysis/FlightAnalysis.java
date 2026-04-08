@@ -1,4 +1,4 @@
-package org.ulpgc.dacd.flight.analysis;
+package org.ulpgc.dacd.analysis;
 
 import org.ulpgc.dacd.persistence.DatabaseManager;
 
