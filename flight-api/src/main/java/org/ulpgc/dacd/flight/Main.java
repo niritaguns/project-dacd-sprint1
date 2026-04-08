@@ -20,9 +20,12 @@ public class Main {
         }
 
         FlightService service = new FlightService();
+        FlightAnalysis flightAnalysis = new FlightAnalysis();
+        SpaceWeatherAnalysis weatherAnalysis = new SpaceWeatherAnalysis();
 
         ScheduledExecutorService scheduler =
-                Executors.newScheduledThreadPool(1);
+                Executors.newScheduledThreadPool(2); // mejor 2 hilos
+
         System.out.println("Sistema iniciado correctamente");
 
         scheduler.scheduleAtFixedRate(
@@ -31,6 +34,17 @@ public class Main {
                 1,
                 TimeUnit.HOURS
         );
+        scheduler.scheduleAtFixedRate(
+                flightAnalysis::runAnalysis,
+                1,
+                1,
+                TimeUnit.HOURS
+        );
+        scheduler.scheduleAtFixedRate(
+                weatherAnalysis::runAnalysis,
+                1,
+                1,
+                TimeUnit.HOURS
+        );
     }
 }
-
