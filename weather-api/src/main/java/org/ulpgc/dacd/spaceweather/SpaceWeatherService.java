@@ -43,7 +43,7 @@ public class SpaceWeatherService {
 
                 repository.saveEvent(type, kp, start, end, "NASA", capturedAt);
 
-                // 🔥 ALERTA IMPORTANTE
+
                 if (kp >= 5) {
                     System.out.println("⚠️ ALERTA: Tormenta geomagnética detectada (Kp=" + kp + ")");
                 }
